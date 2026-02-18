@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="tb-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro-Formulario</title>
+</head>
+<body>
+    <form action="#" method="post">
+  <fieldset>
+    <legend>Cadastro Workshop</legend>
+
+    <label for="nome">Nome completo</label><br>
+  <input id="nome" name="nome" type="text" placeholder="Seu nome completo" required><br>
+  <label for="CPF">CPF</label><br>
+  <input id="cpf" name="nome" type="text" placeholder="Seu cpf"><br>
+  <label for="Data de Nascimento">Data De Nascimento</label><br>
+  <input id="datadenascimento" name="nome" type="text" placeholder="Data de Nascimento"><br>
+  <label for="Telefone">Telefone</label><br>
+  <input id="telefone"name="telefone"type="tel" pattern="[0-9]{10,11}"placeholder="75991502310"><br>
+
+  <label for="email">Email</label><br>
+
+  <input id="email" name="nome" type="email" placeholder="Seu Email"><br><br>
+  
+ <label for="mensagem">Mensagem</label><br><br>
+    <textarea name="mensagem" id="mensagem"rows="4" cols="40"  maxlength="300" placeholder="Escreva sua mensagem"></textarea><br> <br>
+    <label for="Area">Area de Interesse</label><br><br>
+    <select name="Area de Interesse" id="area de interesse" required>
+        <option value="">Selecione</option><br><br>
+        <option value="frontend">Fronte-end</option>
+        <option value="backend">Back-end</option>
+        <option value="fullstack">Full Stack</option><br>
+        
+        <p>Turno de Interesse</p><br>
+       <label for="turno">Turno de Interesse</label>
+        <label><input type="radio"name="turno"value="manhã"checked>Manhã</label>
+        <label><input type="radio" name="turno"value="noite">Noite</label>
+
+        
+    </select><br><br>
+  
+   <button type="submit">Enviar Inscrição</button>
+   <button type="reset">Limpar Formulario</button>
+  </fieldset>
+  
+
+</form>
+
+</body>
+</html>
